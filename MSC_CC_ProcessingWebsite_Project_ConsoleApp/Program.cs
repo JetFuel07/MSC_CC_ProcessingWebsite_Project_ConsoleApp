@@ -1,6 +1,6 @@
 ﻿//1. look through the source directory and find all the files matching with file name mask
 
-using System.IO;
+//using System.IO;
 
 string[] filePaths = Directory.GetFiles(@"K:\msc transfer\Settlement\2022");
 
@@ -8,6 +8,11 @@ foreach (string filePath in filePaths)
 {
     Console.WriteLine(filePath);
 }
+
+//1. another way
+
+//var pathFiles = Directory.GetFiles(_appSettingsConnection.GetSection("FilePaths")["DownloadedFiles"], "*.csv");
+
 
 
 //2. Insert the file name, data load time to the "Processing table"
